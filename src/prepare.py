@@ -4,16 +4,16 @@ from io import StringIO
 import sys
 import logging
 
-# logging.basicConfig(
-#     format='%(asctime)s %(levelname)s:%(name)s: %(message)s',
-#     level=logging.INFO,
-#     datefmt='%H:%M:%S',
-#     stream=sys.stderr
-# )
+logging.basicConfig(
+    format='%(asctime)s %(levelname)s:%(name)s: %(message)s',
+    level=logging.INFO,
+    datefmt='%H:%M:%S',
+    stream=sys.stderr
+)
 
-# logger = logging.getLogger(__name__)
+logger = logging.getLogger(__name__)
 
-# logging.info('Fetching data...')
+logging.info('Fetching data...')
 
 movie_data_path = api.get_url('dataset/movies.csv', remote='dataset-track')
 finantial_data_path = api.get_url('dataset/finantials.csv',remote='dataset-track')
