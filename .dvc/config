@@ -1,0 +1,8 @@
+[core]
+    remote = remote_data_storage
+['remote "dataset-track"']
+    url = gs://model-dataset-tracker-c/dataset
+['remote "model-tracker"']
+    url = gs://model-dataset-tracker-c/model
+['remote "remote_data_storage"']
+    url = gs://ml-ops-fundamentals-bucket/DVC_DATA
